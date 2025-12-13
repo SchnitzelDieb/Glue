@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdjexweolgbmc"]
+
+[ext_resource type="Theme" uid="uid://cl724nrqp324e" path="res://Assets/PLaceHolder/UI/Button_UI.tres" id="1_hok7m"]
+
+[sub_resource type="Animation" id="Animation_jkgm7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_riwc7"]
+resource_name = "typewriter_effect"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qhsp2"]
+_data = {
+&"RESET": SubResource("Animation_jkgm7"),
+&"typewriter_effect": SubResource("Animation_riwc7")
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer"]
+libraries = {
+&"": SubResource("AnimationLibrary_qhsp2")
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 2
+offset_left = 322.0
+offset_top = 541.0
+offset_right = 977.0
+offset_bottom = 705.0
+theme = ExtResource("1_hok7m")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/mono_font_size = 24
+text = "Das ist der Dialog des Besuchers"
+visible_characters = 0
+visible_ratio = 0.0

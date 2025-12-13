@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b06s2xdy60bru"]
+
+[ext_resource type="Script" uid="uid://gr6drni2diqo" path="res://Scripts/visitor_room.gd" id="1_r58w8"]
+[ext_resource type="Texture2D" uid="uid://cq4j1vqlojgkx" path="res://Assets/PLaceHolder/Madamed-Warteraum.jpg" id="2_xh0fl"]
+[ext_resource type="Theme" uid="uid://cl724nrqp324e" path="res://Assets/PLaceHolder/UI/Button_UI.tres" id="3_xh0fl"]
+
+[node name="BesucherRaum" type="Node2D"]
+script = ExtResource("1_r58w8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(654, 336)
+texture = ExtResource("2_xh0fl")
+
+[node name="BachButton" type="Button" parent="."]
+offset_left = 32.0
+offset_top = 533.0
+offset_right = 226.0
+offset_bottom = 698.0
+theme = ExtResource("3_xh0fl")
+text = "Zurück"
+
+[connection signal="pressed" from="BachButton" to="." method="_on_bach_button_pressed"]
