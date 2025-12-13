@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var dialogue_manager: DialogueManager = $Visitor/DialogManager
 
-const visitor_scene = preload("res://Scenes/Visitors/Visitor.tscn")
+const visitor_scene = preload("res://Scenes/Visitors/Visitor1.1.tscn")
 
 var final_decision: int
 var visitor: Node2D
