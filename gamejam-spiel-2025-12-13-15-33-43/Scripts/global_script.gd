@@ -7,7 +7,7 @@ var fuel: int
 var add_visitor: bool
 
 
-
+#Momentan unnötig
 func handle_visitors():
 	if add_visitor == true:
 		print("Ist True")

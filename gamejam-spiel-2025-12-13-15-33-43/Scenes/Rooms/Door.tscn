@@ -1,20 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://c3fsbr2jhkgln"]
 
 [ext_resource type="Script" uid="uid://bg1xmjuppev3l" path="res://Scripts/door.gd" id="1_3uw8h"]
-[ext_resource type="Texture2D" uid="uid://c8v0tgt14lkwj" path="res://Assets/PLaceHolder/jan-tinneberg-tVIv23vcuz4-unsplash-1024x683.png" id="2_3uw8h"]
-[ext_resource type="Texture2D" uid="uid://dyjj5eycobj2" path="res://Assets/PLaceHolder/istockphoto-173936056-612x612.jpg" id="3_2xw0u"]
+[ext_resource type="Texture2D" uid="uid://ddqy6c0khrle7" path="res://Assets/Finale_Ressourcen/World/tuerblick_tuerspalt.webp" id="2_2xw0u"]
+[ext_resource type="Texture2D" uid="uid://7lusgnbuhup0" path="res://Assets/Finale_Ressourcen/World/tuerblick_bg.webp" id="3_bvfef"]
 
 [node name="Door" type="Node2D"]
 script = ExtResource("1_3uw8h")
 
 [node name="SpriteDoor" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(640.6488, 357.5185)
-scale = Vector2(1.2467797, 1.0555828)
-texture = ExtResource("2_3uw8h")
+position = Vector2(757.1299, 360.50003)
+scale = Vector2(0.7884269, 0.66759264)
+texture = ExtResource("2_2xw0u")
 
 [node name="SpriteBackground" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(546.5, 367.5)
-scale = Vector2(1.7009804, 1.7975609)
-texture = ExtResource("3_2xw0u")
+position = Vector2(639.8713, 379.77682)
+scale = Vector2(1.1643827, 1.2304956)
+texture = ExtResource("3_bvfef")
