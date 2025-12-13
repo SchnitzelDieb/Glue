@@ -9,9 +9,9 @@ const action_buton_theme = preload("res://Assets/PLaceHolder/UI/Button_UI.tres")
 
 
 #Dialog Optionen
-@export var answer_1: Array = ["Option1.1", "Option1.2", "Option1.3", "Decision.x"]
-@export var answer_2: Array = ["Option2.1", "Option2.2", "Option2.3", "Decision.y"]
-@export var answer_3: Array = ["Option3.1", "Option3.2", "Option3.3", "Decision.z"]
+@export var answer_1: Array = ["Who are you?", "Tell me more about yourself.", "Come in."]
+@export var answer_2: Array = ["Why should I trust you?", "Count to five.", "Go Away!"]
+@export var answer_3: Array = ["Why should I help you?", "How can you help me?", "[use as fuel]"]
 
 
 #Übersicht der Antworten
@@ -66,21 +66,19 @@ func handle_answers():
 		hide()
 		await get_tree().create_timer(0.3).timeout
 		show()
-		if answer_counter < 3:
+		if answer_counter < 2:
 			answer_counter += 1
 		get_parent().handle_dialogue_counter()
 		print(choosen_questions)
 		answer_text()
 		round_tracer += 3
-		print("round_tracer", round_tracer)
-		print("Answer Counter: ", answer_counter)
 		button_change()
 		scene_transition()
 
 
 #Ändern des Button Themes für die Auswahl
 func button_change():
-	if answer_counter == 3:
+	if answer_counter == 2:
 		option_1.theme = action_buton_theme
 		option_2.theme = action_buton_theme
 		option_3.theme = action_buton_theme
@@ -93,7 +91,7 @@ func delete_dialogue_window():
 
 #Transition zu MainRoom
 func scene_transition():
-	if round_tracer == 12:
+	if round_tracer == 9:
 		set_final_decision()
 		hide()
 		await get_tree().create_timer(4).timeout
@@ -102,5 +100,5 @@ func scene_transition():
 
 
 func set_final_decision():
-	final_decision = choosen_questions -9
+	final_decision = choosen_questions -6
 	print("final decision ", final_decision)
