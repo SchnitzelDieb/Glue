@@ -14,10 +14,18 @@ text = "Start Game"
 
 [node name="CloseGame" type="Button" parent="."]
 offset_left = 25.0
-offset_top = 37.0
+offset_top = 73.0
 offset_right = 67.0
-offset_bottom = 68.0
+offset_bottom = 104.0
 text = "Quit"
+
+[node name="Credits" type="Button" parent="."]
+offset_left = 13.0
+offset_top = 36.0
+offset_right = 76.0
+offset_bottom = 67.0
+text = "Credits"
 
 [connection signal="pressed" from="StartGame" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="CloseGame" to="." method="_on_close_game_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
