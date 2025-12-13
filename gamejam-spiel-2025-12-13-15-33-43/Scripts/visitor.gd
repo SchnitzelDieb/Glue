@@ -5,7 +5,7 @@ const dialogue_manager_scene = preload("res://Scenes/dialogue_manager.tscn")
 @onready var rich_text_label: RichTextLabel = $AnimationPlayer/RichTextLabel
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
-#Visitor Typ muss entweder "Imposter" oder "Roommate sein
+#Visitor Typ muss entweder "Imposter" oder "Visitor sein
 @export var visitor_type: String
 @export var visitor_default_text: String
 

@@ -21,14 +21,16 @@ func _process(delta: float) -> void:
 
 
 func execute_decision():
-	#Töten für Benzin
+	#Reinlassen
 	if final_decision == 1:
-		visitor.queue_free()
-		GlobalScript.fuel += 1
-		print("Anzahl Fuel: ", GlobalScript.fuel)
+		GlobalScript.add_visitor = true
+		
 	#Wegschicken
 	elif final_decision == 2:
 		visitor.queue_free()
-	#Reinlassen
+		
+	#Töten für Fuel
 	elif final_decision == 3:
-		GlobalScript.add_visitor = true
+		visitor.queue_free()
+		GlobalScript.fuel += 1
+		print("Anzahl Fuel: ", GlobalScript.fuel)

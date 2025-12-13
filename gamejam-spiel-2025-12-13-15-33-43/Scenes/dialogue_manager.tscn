@@ -5,10 +5,11 @@
 
 [node name="DialogueManager" type="VBoxContainer"]
 z_index = 2
-offset_top = 253.0
-offset_right = 326.0
-offset_bottom = 541.0
-theme_override_constants/separation = 24
+offset_left = 783.0
+offset_top = 136.0
+offset_right = 1252.0
+offset_bottom = 448.0
+theme_override_constants/separation = 36
 script = ExtResource("1_s3xy2")
 
 [node name="Answer1" type="Button" parent="."]

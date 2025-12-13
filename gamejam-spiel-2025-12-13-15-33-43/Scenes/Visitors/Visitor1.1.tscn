@@ -17,16 +17,17 @@ animations = [{
 
 [node name="Visitor" type="Node2D"]
 script = ExtResource("1_chtkx")
-visitor_default_text = "Test"
+visitor_type = "Visitor"
+visitor_default_text = "Anyone there? I can see that your light is on.\""
 option1_1 = "“I am a ground worm. An inhabitant of thisplanet, who luckily has no parasites. Keep thoseout, they are quite nasty”"
-option2_1 = "b"
-option3_1 = "c"
-option1_2 = "a"
-option2_2 = "b"
-option3_2 = "c"
-decision1 = "a"
-decision2 = "b"
-decision3 = "c"
+option2_1 = "You can trust me, friend. I am harmless, unlikethose of us who were…less fortunate. Parasites,you see. Be careful around them. Don’t let them in”"
+option3_1 = "“Because, my friend, it is quite freezing hereduring the night. Many of us need to find shelter orelse, we perish”"
+option1_2 = "“I usually bury myself underground in order tosurvive this icy hell. Sadly, that proves uselesstonight”"
+option2_2 = "“One, two, three, four, five. A good test myfriend. Most of the ill ones can’t do that”"
+option3_2 = "“I know this planet, you do not. We can helpeach other friend”"
+decision1 = "“Splendid”"
+decision2 = "“Ah, you’re afraid, but I understand. Good luck,friend. We will both need it”"
+decision3 = "“Oh, my friend, that is very unnece-”"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(650.99994, 373)
