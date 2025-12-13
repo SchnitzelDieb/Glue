@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2nsftjq0j02g"]
+
+[ext_resource type="Script" uid="uid://0l7ney3avmvj" path="res://Scenes/credits.gd" id="1_r18jl"]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource("1_r18jl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="BackButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Zurück"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
