@@ -17,7 +17,16 @@ func handle_visitors():
 
 #Visitor IDs
 var visitor_list: Dictionary = {
-		1 : [1,2,3]
+		1 : [
+		"res://Scenes/Visitors/Visitor1.1.tscn", 
+		"res://Scenes/Visitors/Visitor1.2.tscn", 
+		"res://Scenes/Visitors/Visitor1.1.tscn"],
+		
+		2 : [
+		"res://Scenes/Visitors/Visitor2.1.tscn", 
+		"res://Scenes/Visitors/Visitor2.2.tscn", 
+		"res://Scenes/Visitors/Visitor2.3.tscn"],
+		
 	}
 
 
