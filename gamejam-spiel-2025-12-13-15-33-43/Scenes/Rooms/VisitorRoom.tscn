@@ -14,8 +14,8 @@ texture = ExtResource("2_xh0fl")
 [node name="BachButton" type="Button" parent="."]
 offset_left = 32.0
 offset_top = 533.0
-offset_right = 226.0
-offset_bottom = 698.0
+offset_right = 254.0
+offset_bottom = 689.0
 theme = ExtResource("3_xh0fl")
 text = "Zurück"
 
