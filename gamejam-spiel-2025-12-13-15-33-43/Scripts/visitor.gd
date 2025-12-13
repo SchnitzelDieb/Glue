@@ -43,5 +43,3 @@ func handle_dialogue_counter():
 	var choosen_questions: int = dialogue_manager.choosen_questions
 	rich_text_label.text = dialogue_options[choosen_questions]
 	animation_player.play("typewriter_effect")
-
-	

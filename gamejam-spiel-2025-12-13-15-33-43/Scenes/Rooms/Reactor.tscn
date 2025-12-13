@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cnd4d8f200pah"]
+[gd_scene load_steps=5 format=3 uid="uid://cnd4d8f200pah"]
 
 [ext_resource type="Script" uid="uid://c4t7iqv8t22xd" path="res://Scripts/reactor.gd" id="1_u7mhw"]
 [ext_resource type="Texture2D" uid="uid://bcydw5coe1o00" path="res://Assets/PLaceHolder/img_3539.webp" id="2_iav8g"]
-[ext_resource type="Theme" uid="uid://cl724nrqp324e" path="res://Assets/PLaceHolder/UI/Button_UI.tres" id="3_iav8g"]
+[ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="3_amvax"]
+[ext_resource type="PackedScene" uid="uid://drvfjwhy0ifn6" path="res://Scenes/Ressource.tscn" id="4_amvax"]
 
 [node name="Reaktor" type="Node2D"]
 script = ExtResource("1_u7mhw")
@@ -14,10 +15,12 @@ texture = ExtResource("2_iav8g")
 
 [node name="BackButton" type="Button" parent="."]
 offset_left = 32.0
-offset_top = 533.0
-offset_right = 226.0
+offset_top = 616.0
+offset_right = 296.0
 offset_bottom = 698.0
-theme = ExtResource("3_iav8g")
+theme = ExtResource("3_amvax")
 text = "Zurück"
+
+[node name="Ressource" parent="." instance=ExtResource("4_amvax")]
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

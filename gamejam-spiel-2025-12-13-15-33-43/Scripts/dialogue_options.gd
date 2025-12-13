@@ -19,6 +19,7 @@ var choosen_question: int
 var answer_counter = 0
 var choosen_questions: int = 0
 var round_tracer: int = 0
+var final_decision: int
 
 
 func _ready() -> void:
@@ -34,7 +35,7 @@ func answer_text():
 
 
 func _process(delta: float) -> void:
-	pass
+	GlobalScript.final_decision = final_decision
 
 
 #Button 1
@@ -101,5 +102,5 @@ func scene_transition():
 
 
 func set_final_decision():
-	var final_decision = choosen_questions -9
+	final_decision = choosen_questions -9
 	print("final decision ", final_decision)

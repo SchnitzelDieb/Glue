@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=12 format=4 uid="uid://b1wsbfbdncshm"]
 
-[ext_resource type="Texture2D" uid="uid://dwubq88s6ofkj" path="res://Assets/PLaceHolder/png-transparent-text-box-illustration-area-rectangle-dialogue-box-white-black-art.png" id="1_ec1f6"]
+[ext_resource type="Texture2D" uid="uid://dwubq88s6ofkj" path="res://Assets/PLaceHolder/png-transparent-text-box-illustration-area-rectangle-dialogue-box-white-black-art.png" id="1_lolm0"]
 
 [sub_resource type="Image" id="Image_l5tsg"]
 data = {
@@ -1348,7 +1348,7 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lyhsd"]
-texture = ExtResource("1_ec1f6")
+texture = ExtResource("1_lolm0")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nye0l"]
 content_margin_left = 4.0

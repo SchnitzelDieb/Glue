@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://s2n6kanmawqi"]
 
 [ext_resource type="Script" uid="uid://x7hryi0q3hku" path="res://Scripts/dialogue_options.gd" id="1_s3xy2"]
-[ext_resource type="Theme" uid="uid://b1wsbfbdncshm" path="res://Assets/PLaceHolder/UI/Dialogue_UI.tres" id="2_vdh8g"]
+[ext_resource type="Theme" uid="uid://b1wsbfbdncshm" path="res://Assets/Finale_Ressourcen/Themes/Dialogue_UI.tres" id="2_vdh8g"]
 
 [node name="DialogueManager" type="VBoxContainer"]
 z_index = 2

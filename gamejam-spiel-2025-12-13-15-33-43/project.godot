@@ -14,6 +14,10 @@ config/name="Gamejam Spiel"
 run/main_scene="uid://bknl82yauyngw"
 config/features=PackedStringArray("4.5", "Forward Plus")
 
+[autoload]
+
+GlobalScript="*res://Scripts/global_script.gd"
+
 [display]
 
 window/size/viewport_width=1280
