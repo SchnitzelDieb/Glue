@@ -7,26 +7,22 @@ const dialogue_manager_scene = preload("res://Scenes/dialogue_manager.tscn")
 
 #Visitor Typ muss entweder "Imposter" oder "Roommate sein
 @export var visitor_type: String
+@export var visitor_default_text: String
+
+@export var option1_1: String
+@export var option2_1: String
+@export var option3_1: String
+@export var option1_2: String
+@export var option2_2: String
+@export var option3_2: String
+@export var decision1: String
+@export var decision2: String
+@export var decision3: String
+
 
 var dialogue_manager = dialogue_manager_scene.instantiate()
 
-
-#Dictionary mit Antworten des Besuchers
-var dialogue_options: Dictionary = {
-	1 : "Option1.1",
-	2 : "Option2.1",
-	3 : "Option3.1",
-	4 : "Option1.2",
-	5 : "Option2.2",
-	6 : "Option3.2",
-	7 : "Option1.3",
-	8 : "Option2.3",
-	9 : "Option3.3",
-	10 : "Decision.x",
-	11 : "Decision.y",
-	12 : "Decision.z"
-	}
-
+var dialogue_options: Dictionary
 
 #Auswahl und Instanz des Besuchers
 func _ready() -> void:
@@ -34,8 +30,24 @@ func _ready() -> void:
 	var choosen_questions: int = dialogue_manager.choosen_questions
 	for choice in choosen_questions:
 		rich_text_label.text = dialogue_options[choice]
-		print("hat geklappt!")
 	animation_player.play("typewriter_effect")
+	handle_default_text()
+	
+	
+	#Dictionary mit Antworten des Besuchers
+	dialogue_options = {
+		1 : option1_1,
+		2 : option2_1,
+		3 : option3_1,
+		4 : option1_2,
+		5 : option2_2,
+		6 : option3_2,
+		7 : decision1,
+		8 : decision2,
+		9 : decision3
+		}
+	
+	print(dialogue_options[1])
 
 
 #Wählt den richtigen Dialog aus dem Dictionary oben
@@ -43,3 +55,7 @@ func handle_dialogue_counter():
 	var choosen_questions: int = dialogue_manager.choosen_questions
 	rich_text_label.text = dialogue_options[choosen_questions]
 	animation_player.play("typewriter_effect")
+
+
+func handle_default_text():
+	rich_text_label.text = visitor_default_text

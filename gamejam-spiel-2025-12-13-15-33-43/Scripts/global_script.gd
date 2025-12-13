@@ -27,6 +27,20 @@ var visitor_list: Dictionary = {
 		"res://Scenes/Visitors/Visitor2.2.tscn", 
 		"res://Scenes/Visitors/Visitor2.3.tscn"],
 		
+		3 : [
+		"res://Scenes/Visitors/Visitor3.1.tscn", 
+		"res://Scenes/Visitors/Visitor3.2.tscn", 
+		"res://Scenes/Visitors/Visitor3.3.tscn"],
+		
+		4 : [
+		"res://Scenes/Visitors/Visitor4.1.tscn", 
+		"res://Scenes/Visitors/Visitor4.2.tscn", 
+		"res://Scenes/Visitors/Visitor4.3.tscn"],
+		
+		5 : [
+		"res://Scenes/Visitors/Visitor5.1.tscn", 
+		"res://Scenes/Visitors/Visitor5.2.tscn", 
+		"res://Scenes/Visitors/Visitor5.3.tscn"]
 	}
 
 

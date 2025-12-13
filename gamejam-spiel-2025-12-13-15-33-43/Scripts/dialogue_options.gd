@@ -72,8 +72,6 @@ func handle_answers():
 		print(choosen_questions)
 		answer_text()
 		round_tracer += 3
-		print("round_tracer", round_tracer)
-		print("Answer Counter: ", answer_counter)
 		button_change()
 		scene_transition()
 
