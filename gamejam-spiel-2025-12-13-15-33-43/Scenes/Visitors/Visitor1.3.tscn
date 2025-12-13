@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2gfj76u0ck1u"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_3c7ic"]
+[ext_resource type="Texture2D" uid="uid://bxajxbigascga" path="res://Assets/PLaceHolder/hd-spongebob-cartoon-transparent-png-701751694950081nzrkf14atw.png" id="2_c2o1j"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_i1dsu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jkgm7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_c2o1j")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_3c7ic")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(650.99994, 373)
+scale = Vector2(0.81125, 0.82)
+sprite_frames = SubResource("SpriteFrames_jkgm7")
+animation = &"idle"
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_i1dsu")]
