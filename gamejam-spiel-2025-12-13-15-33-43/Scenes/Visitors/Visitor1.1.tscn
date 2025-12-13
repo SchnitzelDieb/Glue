@@ -17,6 +17,16 @@ animations = [{
 
 [node name="Visitor" type="Node2D"]
 script = ExtResource("1_chtkx")
+visitor_default_text = "Test"
+option1_1 = "“I am a ground worm. An inhabitant of thisplanet, who luckily has no parasites. Keep thoseout, they are quite nasty”"
+option2_1 = "b"
+option3_1 = "c"
+option1_2 = "a"
+option2_2 = "b"
+option3_2 = "c"
+decision1 = "a"
+decision2 = "b"
+decision3 = "c"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(650.99994, 373)
