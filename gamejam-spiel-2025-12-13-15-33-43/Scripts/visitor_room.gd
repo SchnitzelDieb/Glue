@@ -1,7 +1,7 @@
 extends Node2D
 
 
-var visitor_scene = preload("res://Scenes/Visitor.tscn")
+var visitor_scene = preload("res://Scenes/Visitors/Visitor.tscn")
 
 @onready var visitor: Node2D = $Visitor
 
