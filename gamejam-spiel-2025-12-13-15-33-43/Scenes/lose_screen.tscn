@@ -10,5 +10,6 @@ script = ExtResource("1_s2rrh")
 [node name="back_to_main_menu" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
+text = "Back to Main Menu"
 
 [connection signal="pressed" from="back_to_main_menu" to="." method="_on_back_to_main_menu_pressed"]

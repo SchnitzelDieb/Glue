@@ -1,41 +1,40 @@
 [gd_scene load_steps=3 format=3 uid="uid://bud1bta7mglbd"]
 
 [ext_resource type="Script" uid="uid://byt446w3opt51" path="res://Scripts/main_room.gd" id="1_88gup"]
-[ext_resource type="Texture2D" uid="uid://b4whdlihctu3q" path="res://Assets/PLaceHolder/door_13-t2.jpg" id="2_bisa2"]
+[ext_resource type="Texture2D" uid="uid://bly0tqrbsgnyy" path="res://Assets/Finale_Ressourcen/World/BG.webp" id="2_6a818"]
 
 [node name="MainRoom" type="Node2D"]
 script = ExtResource("1_88gup")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(674, 339.5)
-scale = Vector2(2.5568628, 2.269697)
-texture = ExtResource("2_bisa2")
+position = Vector2(960, 540)
+texture = ExtResource("2_6a818")
 
 [node name="Room1" type="Button" parent="."]
 custom_minimum_size = Vector2(280, 0)
-offset_left = 24.0
-offset_top = 24.0
-offset_right = 382.0
-offset_bottom = 655.0
+offset_left = 196.0
+offset_top = 220.0
+offset_right = 527.0
+offset_bottom = 803.4106
 theme_override_font_sizes/font_size = 24
 text = "Reaktor
 "
 
 [node name="Room2" type="Button" parent="."]
 custom_minimum_size = Vector2(280, 0)
-offset_left = 491.0
-offset_top = 17.0
-offset_right = 785.0
-offset_bottom = 653.0
+offset_left = 815.0
+offset_top = 210.0
+offset_right = 1095.0
+offset_bottom = 815.71423
 theme_override_font_sizes/font_size = 24
 text = "Tür"
 
 [node name="Room3" type="Button" parent="."]
 custom_minimum_size = Vector2(280, 0)
-offset_left = 900.0
-offset_top = 24.0
-offset_right = 1256.0
-offset_bottom = 651.0
+offset_left = 1366.0
+offset_top = 220.0
+offset_right = 1695.0
+offset_bottom = 799.44666
 theme_override_font_sizes/font_size = 24
 text = "Besucher Raum"
 
