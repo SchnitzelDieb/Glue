@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3fsbr2jhkgln"]
+[gd_scene load_steps=5 format=3 uid="uid://c3fsbr2jhkgln"]
 
 [ext_resource type="Script" uid="uid://bg1xmjuppev3l" path="res://Scripts/door.gd" id="1_3uw8h"]
 [ext_resource type="Texture2D" uid="uid://ddqy6c0khrle7" path="res://Assets/Finale_Ressourcen/World/tuerblick_tuerspalt.webp" id="2_2xw0u"]
 [ext_resource type="Texture2D" uid="uid://7lusgnbuhup0" path="res://Assets/Finale_Ressourcen/World/tuerblick_bg.webp" id="3_bvfef"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="4_bvfef"]
 
 [node name="Door" type="Node2D"]
 script = ExtResource("1_3uw8h")
@@ -18,3 +19,5 @@ z_index = -1
 position = Vector2(639.8713, 379.77682)
 scale = Vector2(1.1643827, 1.2304956)
 texture = ExtResource("3_bvfef")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("4_bvfef")]

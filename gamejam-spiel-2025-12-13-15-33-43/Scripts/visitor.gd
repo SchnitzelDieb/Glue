@@ -8,7 +8,6 @@ const dialogue_manager_scene = preload("res://Scenes/dialogue_manager.tscn")
 #Visitor Typ muss entweder "Imposter" oder "Visitor sein
 @export var visitor_type: String
 @export var visitor_default_text: String
-
 @export var option1_1: String
 @export var option2_1: String
 @export var option3_1: String
@@ -21,16 +20,15 @@ const dialogue_manager_scene = preload("res://Scenes/dialogue_manager.tscn")
 
 
 var dialogue_manager = dialogue_manager_scene.instantiate()
-
 var dialogue_options: Dictionary
 
 #Auswahl und Instanz des Besuchers
 func _ready() -> void:
-	add_child(dialogue_manager)
-	var choosen_questions: int = dialogue_manager.choosen_questions
-	for choice in choosen_questions:
-		rich_text_label.text = dialogue_options[choice]
-	animation_player.play("typewriter_effect")
+	if dialogue_manager:
+		var choosen_questions: int = dialogue_manager.choosen_questions
+		for choice in choosen_questions:
+			rich_text_label.text = dialogue_options[choice]
+		animation_player.play("typewriter_effect")
 	handle_default_text()
 	
 	
@@ -48,6 +46,12 @@ func _ready() -> void:
 		}
 	
 	print(dialogue_options[1])
+
+
+#Fügt Dialog Manager hinzu
+func dialogue_initialiser():
+	add_child(dialogue_manager)
+
 
 
 #Wählt den richtigen Dialog aus dem Dictionary oben

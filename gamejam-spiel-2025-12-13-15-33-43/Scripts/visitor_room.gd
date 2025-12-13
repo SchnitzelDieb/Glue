@@ -1,9 +1,9 @@
 extends Node2D
 
 
-var visitor_scene = preload("res://Scenes/Visitors/Visitor1.1.tscn")
+const VisitorScene := preload("res://Scenes/Visitors/Visitor1.1.tscn")
 
-@onready var visitor: Node2D = $Visitor
+var visitor_scene: PackedScene = preload("res://Scenes/Visitors/Visitor1.1.tscn")
 
 var current_visitor: Node2D
 
