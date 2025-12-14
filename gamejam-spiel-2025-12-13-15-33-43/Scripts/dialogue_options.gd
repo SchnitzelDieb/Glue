@@ -1,11 +1,11 @@
-extends VBoxContainer
+extends Control
 class_name DialogueManager
 
-const action_buton_theme = preload("res://Assets/PLaceHolder/UI/Button_UI.tres")
+const action_buton_theme = preload("res://Assets/Finale_Ressourcen/Themes/Button.tres")
 
-@onready var option_1: Button = $Answer1
-@onready var option_2: Button = $Answer2
-@onready var option_3: Button = $Answer3
+@onready var option_1: Button = $VBoxContainer/Answer1
+@onready var option_2: Button = $VBoxContainer/Answer2
+@onready var option_3: Button = $VBoxContainer/Answer3
 
 
 #Dialog Optionen

@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 
 @onready var ressource: Node2D = $Ressource

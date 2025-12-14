@@ -13,28 +13,28 @@ texture = ExtResource("2_6a818")
 [node name="Room1" type="Button" parent="."]
 custom_minimum_size = Vector2(280, 0)
 offset_left = 196.0
-offset_top = 220.0
+offset_top = 272.0
 offset_right = 527.0
-offset_bottom = 803.4106
+offset_bottom = 766.0
 theme_override_font_sizes/font_size = 24
 text = "Reaktor
 "
 
 [node name="Room2" type="Button" parent="."]
 custom_minimum_size = Vector2(280, 0)
-offset_left = 815.0
-offset_top = 210.0
-offset_right = 1095.0
-offset_bottom = 815.71423
+offset_left = 797.0
+offset_top = 279.0
+offset_right = 1125.0
+offset_bottom = 749.0
 theme_override_font_sizes/font_size = 24
 text = "Tür"
 
 [node name="Room3" type="Button" parent="."]
 custom_minimum_size = Vector2(280, 0)
 offset_left = 1366.0
-offset_top = 220.0
+offset_top = 275.0
 offset_right = 1695.0
-offset_bottom = 799.44666
+offset_bottom = 761.0
 theme_override_font_sizes/font_size = 24
 text = "Besucher Raum"
 

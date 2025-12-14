@@ -1,22 +1,44 @@
-[gd_scene load_steps=4 format=3 uid="uid://b06s2xdy60bru"]
+[gd_scene load_steps=5 format=3 uid="uid://b06s2xdy60bru"]
 
 [ext_resource type="Script" uid="uid://gr6drni2diqo" path="res://Scripts/visitor_room.gd" id="1_r58w8"]
 [ext_resource type="Texture2D" uid="uid://cq4j1vqlojgkx" path="res://Assets/PLaceHolder/Madamed-Warteraum.jpg" id="2_xh0fl"]
 [ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="3_xh0fl"]
+[ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="4_ubr0a"]
 
-[node name="BesucherRaum" type="Node2D"]
+[node name="BesucherRaum" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_r58w8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(654, 336)
+position = Vector2(960, 540)
+scale = Vector2(1.5999999, 1.3499999)
 texture = ExtResource("2_xh0fl")
 
-[node name="BachButton" type="Button" parent="."]
-offset_left = 32.0
-offset_top = 533.0
-offset_right = 254.0
-offset_bottom = 689.0
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="BachButton" type="Button" parent="MarginContainer"]
+custom_minimum_size = Vector2(360, 180)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
 theme = ExtResource("3_xh0fl")
+theme_override_fonts/font = ExtResource("4_ubr0a")
+theme_override_font_sizes/font_size = 84
 text = "Zurück"
 
-[connection signal="pressed" from="BachButton" to="." method="_on_bach_button_pressed"]
+[connection signal="pressed" from="MarginContainer/BachButton" to="." method="_on_bach_button_pressed"]

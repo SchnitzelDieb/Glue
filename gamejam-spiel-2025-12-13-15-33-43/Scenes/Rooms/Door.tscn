@@ -9,12 +9,12 @@ script = ExtResource("1_3uw8h")
 
 [node name="SpriteDoor" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(757.1299, 360.50003)
-scale = Vector2(0.7884269, 0.66759264)
+position = Vector2(959.9001, 540)
+scale = Vector2(1.0001042, 1)
 texture = ExtResource("2_2xw0u")
 
 [node name="SpriteBackground" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(639.8713, 379.77682)
-scale = Vector2(1.1643827, 1.2304956)
+position = Vector2(910.1426, 539.8884)
+scale = Vector2(1.655551, 1.7479339)
 texture = ExtResource("3_bvfef")
