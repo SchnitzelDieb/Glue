@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cdjexweolgbmc"]
+[gd_scene load_steps=6 format=3 uid="uid://cdjexweolgbmc"]
 
-[ext_resource type="Theme" uid="uid://cl724nrqp324e" path="res://Assets/PLaceHolder/UI/Button_UI.tres" id="1_hok7m"]
+[ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="1_u4s7x"]
+[ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="2_bs4g0"]
 
 [sub_resource type="Animation" id="Animation_jkgm7"]
 length = 0.001
@@ -45,17 +46,18 @@ libraries = {
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 z_index = 2
-offset_left = 322.0
-offset_top = 541.0
-offset_right = 977.0
-offset_bottom = 705.0
-theme = ExtResource("1_hok7m")
+offset_left = 971.0
+offset_top = 79.0
+offset_right = 1872.0
+offset_bottom = 454.0
+theme = ExtResource("1_u4s7x")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 24
-theme_override_font_sizes/bold_font_size = 24
-theme_override_font_sizes/bold_italics_font_size = 24
-theme_override_font_sizes/italics_font_size = 24
-theme_override_font_sizes/mono_font_size = 24
+theme_override_fonts/normal_font = ExtResource("2_bs4g0")
+theme_override_font_sizes/normal_font_size = 48
+theme_override_font_sizes/bold_font_size = 36
+theme_override_font_sizes/bold_italics_font_size = 36
+theme_override_font_sizes/italics_font_size = 36
+theme_override_font_sizes/mono_font_size = 36
 text = "Das ist der Dialog des Besuchers"
 visible_characters = 0
 visible_ratio = 0.0

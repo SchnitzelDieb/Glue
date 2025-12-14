@@ -1,6 +1,6 @@
-[gd_resource type="Theme" load_steps=12 format=4 uid="uid://b1wsbfbdncshm"]
+[gd_resource type="Theme" load_steps=9 format=4 uid="uid://b1wsbfbdncshm"]
 
-[ext_resource type="Texture2D" uid="uid://dwubq88s6ofkj" path="res://Assets/PLaceHolder/png-transparent-text-box-illustration-area-rectangle-dialogue-box-white-black-art.png" id="1_lolm0"]
+[ext_resource type="Texture2D" uid="uid://cgw2dut26lnwt" path="res://Assets/Finale_Ressourcen/World/Dialogbox.webp" id="1_lolm0"]
 
 [sub_resource type="Image" id="Image_l5tsg"]
 data = {
@@ -1302,51 +1302,6 @@ cache/0/12/0/glyphs/268435478/size = Vector2(8, 11)
 cache/0/12/0/glyphs/268435478/uv_rect = Rect2(162, 1, 8, 11)
 cache/0/12/0/glyphs/268435478/texture_idx = 0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p06dj"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(0.1, 0.1, 0.1, 0.3)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sirl4"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(1, 1, 1, 0.75)
-draw_center = false
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-expand_margin_left = 2.0
-expand_margin_top = 2.0
-expand_margin_right = 2.0
-expand_margin_bottom = 2.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ututs"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(0.225, 0.225, 0.225, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lyhsd"]
 texture = ExtResource("1_lolm0")
 
@@ -1382,8 +1337,8 @@ Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
 Button/font_sizes/font_size = 16
 Button/fonts/font = SubResource("FontFile_1lc8v")
-Button/styles/disabled = SubResource("StyleBoxFlat_p06dj")
-Button/styles/focus = SubResource("StyleBoxFlat_sirl4")
-Button/styles/hover = SubResource("StyleBoxFlat_ututs")
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = null
 Button/styles/normal = SubResource("StyleBoxTexture_lyhsd")
 Button/styles/pressed = SubResource("StyleBoxFlat_nye0l")

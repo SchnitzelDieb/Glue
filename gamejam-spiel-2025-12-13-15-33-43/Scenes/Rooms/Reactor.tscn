@@ -1,26 +1,50 @@
-[gd_scene load_steps=5 format=3 uid="uid://cnd4d8f200pah"]
+[gd_scene load_steps=6 format=3 uid="uid://cnd4d8f200pah"]
 
 [ext_resource type="Script" uid="uid://c4t7iqv8t22xd" path="res://Scripts/reactor.gd" id="1_u7mhw"]
 [ext_resource type="Texture2D" uid="uid://bcydw5coe1o00" path="res://Assets/PLaceHolder/img_3539.webp" id="2_iav8g"]
 [ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="3_amvax"]
 [ext_resource type="PackedScene" uid="uid://drvfjwhy0ifn6" path="res://Scenes/Ressource.tscn" id="4_amvax"]
+[ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="4_xdul6"]
 
-[node name="Reaktor" type="Node2D"]
+[node name="Reaktor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_u7mhw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(644, 346.5)
-scale = Vector2(0.90416664, 0.7138889)
+z_index = -1
+position = Vector2(959.87006, 539.5)
+scale = Vector2(1.3335137, 1.0009259)
 texture = ExtResource("2_iav8g")
 
-[node name="BackButton" type="Button" parent="."]
-offset_left = 32.0
-offset_top = 616.0
-offset_right = 296.0
-offset_bottom = 698.0
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="BackButton" type="Button" parent="MarginContainer"]
+custom_minimum_size = Vector2(360, 180)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
 theme = ExtResource("3_amvax")
+theme_override_fonts/font = ExtResource("4_xdul6")
+theme_override_font_sizes/font_size = 84
 text = "Zurück"
 
 [node name="Ressource" parent="." instance=ExtResource("4_amvax")]
 
-[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="MarginContainer/BackButton" to="." method="_on_back_button_pressed"]

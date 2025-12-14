@@ -27,6 +27,8 @@ var dialogue_options: Dictionary
 #Auswahl und Instanz des Besuchers
 func _ready() -> void:
 	add_child(dialogue_manager)
+	if dialogue_manager:
+		print("AAAAAAAAAAAAHHHHHH")
 	var choosen_questions: int = dialogue_manager.choosen_questions
 	for choice in choosen_questions:
 		rich_text_label.text = dialogue_options[choice]
