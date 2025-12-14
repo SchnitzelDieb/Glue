@@ -73,7 +73,7 @@ func handle_answers():
 		answer_text()
 		round_tracer += 3
 		button_change()
-		scene_transition()
+		scene_transition(final_decision)
 
 
 #Ändern des Button Themes für die Auswahl
@@ -90,7 +90,9 @@ func delete_dialogue_window():
 
 
 #Transition zu MainRoom
-func scene_transition():
+func scene_transition(decision: int):
+	GlobalScript.call_scene_function()
+	print("Global ist aufgerufen")
 	if round_tracer == 9:
 		set_final_decision()
 		hide()
