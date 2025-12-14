@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://d2nsftjq0j02g"]
+[gd_scene load_steps=6 format=3 uid="uid://d2nsftjq0j02g"]
 
 [ext_resource type="Script" uid="uid://0l7ney3avmvj" path="res://Scenes/credits.gd" id="1_r18jl"]
 [ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="2_ccovl"]
 [ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="3_1bamb"]
+[ext_resource type="Material" uid="uid://pr73k1mmwjys" path="res://Shaders/crt_shader.tres" id="4_xelri"]
+[ext_resource type="Texture2D" uid="uid://j15828vlyngn" path="res://Assets/Finale_Ressourcen/World/visor_main_room.png" id="5_uah1q"]
 
 [node name="Credits" type="Node2D"]
 script = ExtResource("1_r18jl")
@@ -15,5 +17,11 @@ offset_bottom = 8.0
 theme = ExtResource("2_ccovl")
 theme_override_fonts/font = ExtResource("3_1bamb")
 text = "Zurück"
+
+[node name="crt_filter" type="Sprite2D" parent="."]
+material = ExtResource("4_xelri")
+position = Vector2(960, 540)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_uah1q")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -19,6 +19,8 @@ decision2 = "We sad."
 decision3 = "I… free."
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(484.00003, 594)
+scale = Vector2(0.48142004, 0.48142)
 texture = ExtResource("2_pdqui")
 
 [node name="AnimationPlayer" parent="." instance=ExtResource("3_js8pd")]

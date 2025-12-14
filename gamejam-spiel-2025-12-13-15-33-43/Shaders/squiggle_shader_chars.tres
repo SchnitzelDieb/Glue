@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://crkyip0ymblri"]
+
+[ext_resource type="Shader" uid="uid://c8rvqr6csphw5" path="res://Shaders/scriggle.gdshader" id="1_ern61"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_pyvdv"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_hxorx"]
+noise = SubResource("FastNoiseLite_pyvdv")
+
+[resource]
+shader = ExtResource("1_ern61")
+shader_parameter/scale = Vector2(5, 5)
+shader_parameter/strength = 0.4
+shader_parameter/fps = 4.0
+shader_parameter/noise = SubResource("NoiseTexture2D_hxorx")

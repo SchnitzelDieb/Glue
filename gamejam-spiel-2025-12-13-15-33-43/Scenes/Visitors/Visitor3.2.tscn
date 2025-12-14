@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cb3sssijt8xjx"]
+[gd_scene load_steps=5 format=3 uid="uid://cb3sssijt8xjx"]
 
 [ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_k5pej"]
+[ext_resource type="Material" uid="uid://crkyip0ymblri" path="res://Shaders/squiggle_shader_chars.tres" id="2_gvecj"]
 [ext_resource type="Texture2D" uid="uid://bxm5w6murigag" path="res://Assets/Finale_Ressourcen/Visitors/Torben.png" id="2_k5pej"]
 [ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_x7fgh"]
 
@@ -19,6 +20,9 @@ decision2 = "LET! TORE!BEN! IN! NOW!!!"
 decision3 = "YOU SHALL NOT!!!"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("2_gvecj")
+position = Vector2(573, 694)
+scale = Vector2(0.68523484, 0.6852349)
 texture = ExtResource("2_k5pej")
 
 [node name="AnimationPlayer" parent="." instance=ExtResource("3_x7fgh")]

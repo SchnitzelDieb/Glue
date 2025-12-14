@@ -19,6 +19,8 @@ decision2 = "P-p-p-p-pleeaaz-z-z-ze."
 decision3 = "W-w-w-warm-m-m-m-m."
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(503, 691)
+scale = Vector2(1.1960001, 1.1960001)
 texture = ExtResource("2_7bbjm")
 
 [node name="AnimationPlayer" parent="." instance=ExtResource("3_tf1nm")]
