@@ -30,8 +30,8 @@ decision2 = "“Ah, you’re afraid, but I understand. Good luck,friend. We will
 decision3 = "“Oh, my friend, that is very unnece-”"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(650.99994, 373)
-scale = Vector2(0.81125, 0.82)
+position = Vector2(548.00006, 582.99994)
+scale = Vector2(0.9368749, 0.94697994)
 sprite_frames = SubResource("SpriteFrames_jkgm7")
 animation = &"idle"
 

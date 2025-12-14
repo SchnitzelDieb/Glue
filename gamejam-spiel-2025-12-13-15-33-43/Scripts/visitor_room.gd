@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 
 var visitor_scene = preload("res://Scenes/Visitors/Visitor1.1.tscn")
