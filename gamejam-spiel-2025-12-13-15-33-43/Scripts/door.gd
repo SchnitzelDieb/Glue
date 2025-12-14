@@ -12,6 +12,8 @@ var visitor_room: Node2D
 func _ready() -> void:
 	visitor = visitor_scene.instantiate()
 	add_child(visitor)
+	visitor.hide_animation_player()
+	visitor.handle_dialogue_window()
 	dialogue_manager = visitor.get_node("DialogManager") as DialogueManager
 
 
