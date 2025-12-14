@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cdjexweolgbmc"]
+[gd_scene load_steps=7 format=3 uid="uid://cdjexweolgbmc"]
 
 [ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="1_u4s7x"]
 [ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="2_bs4g0"]
+[ext_resource type="Texture2D" uid="uid://cgw2dut26lnwt" path="res://Assets/Finale_Ressourcen/World/Dialogbox.webp" id="3_bs4g0"]
 
 [sub_resource type="Animation" id="Animation_jkgm7"]
 length = 0.001
@@ -39,17 +40,25 @@ _data = {
 &"typewriter_effect": SubResource("Animation_riwc7")
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer"]
+[node name="AnimationPlayer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_qhsp2")
 }
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="RichTextLabel" type="RichTextLabel" parent="AnimationPlayer"]
 z_index = 2
-offset_left = 971.0
-offset_top = 79.0
-offset_right = 1872.0
-offset_bottom = 454.0
+offset_left = 1078.0
+offset_top = 124.0
+offset_right = 1797.0
+offset_bottom = 458.0
 theme = ExtResource("1_u4s7x")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_bs4g0")
@@ -61,3 +70,9 @@ theme_override_font_sizes/mono_font_size = 36
 text = "Das ist der Dialog des Besuchers"
 visible_characters = 0
 visible_ratio = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimationPlayer"]
+z_index = 2
+position = Vector2(1431, 295.00006)
+scale = Vector2(0.3078022, 0.26256362)
+texture = ExtResource("3_bs4g0")

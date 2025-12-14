@@ -1,9 +1,8 @@
 extends Node2D
 
+const animation_player_scene = preload("res://Scenes/DialogueWindow.tscn")
 const dialogue_manager_scene = preload("res://Scenes/dialogue_manager.tscn")
 
-@onready var rich_text_label: RichTextLabel = $AnimationPlayer/RichTextLabel
-@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 #Visitor Typ muss entweder "Imposter" oder "Visitor sein
 @export var visitor_type: String
@@ -20,19 +19,20 @@ const dialogue_manager_scene = preload("res://Scenes/dialogue_manager.tscn")
 @export var decision3: String
 
 
-var dialogue_manager = dialogue_manager_scene.instantiate()
-
+@onready var dialogue_manager = dialogue_manager_scene.instantiate()
+@onready var animation_player_node = animation_player_scene.instantiate()
+var animated_player_visible: bool = false
 var dialogue_options: Dictionary
 
 #Auswahl und Instanz des Besuchers
 func _ready() -> void:
-	add_child(dialogue_manager)
-	if dialogue_manager:
-		print("AAAAAAAAAAAAHHHHHH")
+	var animation_player = animation_player_node.get_child(0)
+	var rich_text_label = animation_player.get_child(0)
+	print(animation_player)
 	var choosen_questions: int = dialogue_manager.choosen_questions
 	for choice in choosen_questions:
+		#var rich_text_label: RichTextLabel = animation_player.get_child(0)
 		rich_text_label.text = dialogue_options[choice]
-	animation_player.play("typewriter_effect")
 	handle_default_text()
 	
 	
@@ -52,12 +52,33 @@ func _ready() -> void:
 	print(dialogue_options[1])
 
 
+func hide_animation_player():
+	add_child(animation_player_node)
+	if animation_player_node:
+		print("EEEEEEEEEEEEHHH")
+	var animation_player = animation_player_node.get_child(0)
+	var rich_text_label = animation_player.get_child(0)
+
+
+func handle_dialogue_window():
+	add_child(dialogue_manager)
+	if dialogue_manager:
+		print("AAAAAAAAAAAAHHHHHH")
+
+
 #Wählt den richtigen Dialog aus dem Dictionary oben
 func handle_dialogue_counter():
+	var animation_player = animation_player_node.get_child(0)
+	var rich_text_label = animation_player.get_child(0)
 	var choosen_questions: int = dialogue_manager.choosen_questions
+	#var rich_text_label: RichTextLabel = animation_player.get_child(0)
 	rich_text_label.text = dialogue_options[choosen_questions]
 	animation_player.play("typewriter_effect")
 
 
 func handle_default_text():
+	var animation_player = animation_player_node.get_child(0)
+	var rich_text_label = animation_player.get_child(0)
+	#var rich_text_label: RichTextLabel = animation_player.get_child(0)
 	rich_text_label.text = visitor_default_text
+	animation_player.play("typewriter_effect")
