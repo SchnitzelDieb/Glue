@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://4xyemkwppem"]
 
 [ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_chtkx"]
-[ext_resource type="Material" path="res://Shaders/squiggle_shader_chars.tres" id="2_cr7ec"]
+[ext_resource type="Material" uid="uid://crkyip0ymblri" path="res://Shaders/squiggle_shader_chars.tres" id="2_cr7ec"]
 [ext_resource type="Texture2D" uid="uid://b44qhobrs1j2g" path="res://Assets/Finale_Ressourcen/Visitors/Ground_Worm.png" id="2_d5xgy"]
 [ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_riwc7"]
 
