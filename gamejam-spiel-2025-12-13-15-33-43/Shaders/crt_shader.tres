@@ -1,0 +1,27 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://pr73k1mmwjys"]
+
+[ext_resource type="Shader" uid="uid://bi8m7tfkwqb0q" path="res://Shaders/ctr.gdshader" id="1_1femp"]
+
+[resource]
+shader = ExtResource("1_1femp")
+shader_parameter/overlay = false
+shader_parameter/scanlines_opacity = 0.32
+shader_parameter/scanlines_width = 0.129
+shader_parameter/grille_opacity = 0.3
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = false
+shader_parameter/roll = true
+shader_parameter/roll_speed = 1.21
+shader_parameter/roll_size = 13.851
+shader_parameter/roll_variation = 3.321
+shader_parameter/distort_intensity = 0.002
+shader_parameter/noise_opacity = 0.067
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.083
+shader_parameter/aberration = -0.016
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = false
+shader_parameter/warp_amount = 0.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.385

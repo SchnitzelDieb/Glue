@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://brgqu3obmggmj"]
+[gd_scene load_steps=5 format=3 uid="uid://brgqu3obmggmj"]
 
 [ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_ug0dq"]
+[ext_resource type="Material" uid="uid://crkyip0ymblri" path="res://Shaders/squiggle_shader_chars.tres" id="2_hlekn"]
 [ext_resource type="Texture2D" uid="uid://b0vy3k7lmvnvn" path="res://Assets/Finale_Ressourcen/Visitors/xXHumanLoverXx.png" id="2_ug0dq"]
 [ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_m20is"]
 
@@ -19,6 +20,9 @@ decision2 = "I suppose I understand your mistrust."
 decision3 = "That’s…"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("2_hlekn")
+position = Vector2(467, 551)
+scale = Vector2(0.3888249, 0.38882494)
 texture = ExtResource("2_ug0dq")
 
 [node name="AnimationPlayer" parent="." instance=ExtResource("3_m20is")]

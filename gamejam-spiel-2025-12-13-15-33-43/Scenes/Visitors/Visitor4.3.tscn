@@ -19,6 +19,8 @@ decision2 = "Ain’t no one virtuous these days… Shame."
 decision3 = "Have mercy!"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(445, 543)
+scale = Vector2(0.5052817, 0.50528157)
 texture = ExtResource("2_8h55c")
 
 [node name="AnimationPlayer" parent="." instance=ExtResource("3_6fhs6")]

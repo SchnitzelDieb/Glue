@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://btjmr71u1us77"]
+[gd_scene load_steps=5 format=3 uid="uid://btjmr71u1us77"]
 
 [ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_bj8nd"]
 [ext_resource type="Texture2D" uid="uid://cm1n6vf8ya343" path="res://Assets/Finale_Ressourcen/Visitors/Josh_Babinski.png" id="2_bj8nd"]
+[ext_resource type="Material" uid="uid://crkyip0ymblri" path="res://Shaders/squiggle_shader_chars.tres" id="2_bmuyn"]
 [ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_gcqfu"]
 
 [node name="Visitor" type="Node2D"]
@@ -19,6 +20,9 @@ decision2 = "…"
 decision3 = "No…"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("2_bmuyn")
+position = Vector2(526, 721.99994)
+scale = Vector2(1.12, 1.12)
 texture = ExtResource("2_bj8nd")
 
 [node name="AnimationPlayer" parent="." instance=ExtResource("3_gcqfu")]
