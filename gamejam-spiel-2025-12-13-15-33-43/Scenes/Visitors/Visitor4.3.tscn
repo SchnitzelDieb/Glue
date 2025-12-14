@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfkkqpyoy2xhw"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_8h55c"]
+[ext_resource type="Texture2D" uid="uid://cmpleyfvrh3en" path="res://Assets/Finale_Ressourcen/Visitors/Ripple.png" id="2_8h55c"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_6fhs6"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_8h55c")
+visitor_type = "Crewmate"
+visitor_default_text = "Well hello there, lad."
+option1_1 = "Just a simple honest angler, mate. Nothing more."
+option2_1 = "Because I’m honest, lad."
+option3_1 = "Because I’m in need, lad. It don’t get simpler than that ‘round ‘ere."
+option1_2 = "I often fish ‘round these parts. Can’t no more ‘cause o’ the cold."
+option2_2 = "I only count the fish I catch, mate."
+option3_2 = "I can catch a big one for you if you let me in."
+decision1 = "Much appreciated, lad. You’re a good one."
+decision2 = "Ain’t no one virtuous these days… Shame."
+decision3 = "Have mercy!"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8h55c")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_6fhs6")]

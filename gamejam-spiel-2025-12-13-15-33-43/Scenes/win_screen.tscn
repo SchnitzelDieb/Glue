@@ -1,15 +1,50 @@
-[gd_scene load_steps=2 format=3 uid="uid://c67hiromrkgeg"]
+[gd_scene load_steps=6 format=3 uid="uid://c67hiromrkgeg"]
 
 [ext_resource type="Script" uid="uid://bgufv0kxvkntb" path="res://Scripts/win_screen.gd" id="1_l5sol"]
+[ext_resource type="Texture2D" uid="uid://larmx387hw8j" path="res://Assets/Finale_Ressourcen/World/Endscreen-good.png" id="2_awi1s"]
+[ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="3_bwc64"]
+[ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="4_bwc64"]
+[ext_resource type="Texture2D" uid="uid://cgw2dut26lnwt" path="res://Assets/Finale_Ressourcen/World/Dialogbox.webp" id="5_85imr"]
 
 [node name="WinScreen" type="Node2D"]
 script = ExtResource("1_l5sol")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(960, 540)
+texture = ExtResource("2_awi1s")
 
 [node name="BackToMainMenu" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 50.0
+offset_top = 984.0
+offset_right = 386.59998
+offset_bottom = 1035.0
+theme = ExtResource("3_bwc64")
+theme_override_fonts/font = ExtResource("4_bwc64")
+theme_override_font_sizes/font_size = 32
 text = "Back to Main Menu"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1114.0
+offset_top = 89.0
+offset_right = 1893.0
+offset_bottom = 470.0
+theme_override_fonts/font = ExtResource("4_bwc64")
+theme_override_font_sizes/font_size = 32
+text = "You, along with your newfound alien friends, have 
+successfully repaired your ship - Odysseus. 
+What awaits you now is the infinite emptiness of 
+outer space as you make your escape from planet 
+Amarok. 
+You have survived against impossible odds.  
+Who knows what horrible fate you’d have met, 
+were you not so cautious."
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Label"]
+z_index = -1
+position = Vector2(377.82162, 135)
+scale = Vector2(0.28084186, 0.21119593)
+texture = ExtResource("5_85imr")
 
 [connection signal="pressed" from="BackToMainMenu" to="." method="_on_back_to_main_menu_pressed"]

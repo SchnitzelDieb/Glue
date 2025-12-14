@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2nsftjq0j02g"]
+[gd_scene load_steps=4 format=3 uid="uid://d2nsftjq0j02g"]
 
 [ext_resource type="Script" uid="uid://0l7ney3avmvj" path="res://Scenes/credits.gd" id="1_r18jl"]
+[ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="2_ccovl"]
+[ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="3_1bamb"]
 
 [node name="Credits" type="Node2D"]
 script = ExtResource("1_r18jl")
@@ -10,6 +12,8 @@ script = ExtResource("1_r18jl")
 [node name="BackButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
+theme = ExtResource("2_ccovl")
+theme_override_fonts/font = ExtResource("3_1bamb")
 text = "Zurück"
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

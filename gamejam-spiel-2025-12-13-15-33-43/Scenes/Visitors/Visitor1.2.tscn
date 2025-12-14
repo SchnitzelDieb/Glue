@@ -1,27 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqkrq46iqawha"]
+[gd_scene load_steps=4 format=3 uid="uid://bqkrq46iqawha"]
 
 [ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_ptjie"]
-[ext_resource type="Texture2D" uid="uid://bxajxbigascga" path="res://Assets/PLaceHolder/hd-spongebob-cartoon-transparent-png-701751694950081nzrkf14atw.png" id="2_wphvs"]
+[ext_resource type="Texture2D" uid="uid://rkohkmd2ts3y" path="res://Assets/Finale_Ressourcen/Visitors/Blobert.png" id="2_ptjie"]
 [ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_hggcv"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_jkgm7"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_wphvs")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}]
 
 [node name="Visitor" type="Node2D"]
 script = ExtResource("1_ptjie")
+visitor_type = "Crewmate"
+visitor_default_text = "Hey!"
+option1_1 = "My name is Blobert."
+option2_1 = "You don’t need to. I don’t care."
+option3_1 = "“I’m a chill guy."
+option1_2 = "I don’t like talking about myself."
+option2_2 = "One, two, three ,four, five. Should I go on?"
+option3_2 = "I can chill with you. Nothing much."
+decision1 = "Thanks, man!"
+decision2 = "Not cool. Goodbye."
+decision3 = "What the he-"
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(650.99994, 373)
-scale = Vector2(0.81125, 0.82)
-sprite_frames = SubResource("SpriteFrames_jkgm7")
-animation = &"idle"
+texture = ExtResource("2_ptjie")
 
 [node name="AnimationPlayer" parent="." instance=ExtResource("3_hggcv")]

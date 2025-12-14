@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5e71nsf41wjj"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_7rkw6"]
+[ext_resource type="Texture2D" uid="uid://cxrhvd0au343o" path="res://Assets/Finale_Ressourcen/Visitors/Sergej_Ivaljevic.png" id="2_7rkw6"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_qg36m"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_7rkw6")
+visitor_type = "Imposter"
+visitor_default_text = "Hey, are you alright?"
+option1_1 = "I‘m nothing much, honestly."
+option2_1 = "Why should you not trust me?"
+option3_1 = "I suppose I have no answer to that, I just hope you do."
+option1_2 = "Hmm what is there to tell…? I’m nothing special after all."
+option2_2 = "Oh sure, uhh… one, two, three, four, five, six, seven, eight, nine, ten… wait what did you ask me to do?"
+option3_2 = "I can help you with many things… we have many talents."
+decision1 = "Oh, thank you so much!"
+decision2 = "…I understand."
+decision3 = "What are you…?"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7rkw6")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_qg36m")]

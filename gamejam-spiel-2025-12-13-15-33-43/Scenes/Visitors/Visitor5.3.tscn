@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3rnkt1q6jy8x"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_l3oyf"]
+[ext_resource type="Texture2D" uid="uid://djrnpj7nndk6w" path="res://Assets/Finale_Ressourcen/Visitors/Burek_Baklava.png" id="2_l3oyf"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_ddr3v"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_l3oyf")
+visitor_type = "Imposter"
+visitor_default_text = "Nice place you have there, friend, hehe."
+option1_1 = "A f-friend, of course."
+option2_1 = "B-becaus-s-se I am a friend."
+option3_1 = "You don’t need to help me. I need t-to h-help youu…"
+option1_2 = "I am -uhhhhh- a friendly friend."
+option2_2 = "One, two, three,... what number goes after three?"
+option3_2 = "I can keep you company. That’s what friends d-doo, right?"
+decision1 = "Thank y-you, friend."
+decision2 = "You are not a good friend, friend."
+decision3 = "Why, frien-?"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_l3oyf")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_ddr3v")]

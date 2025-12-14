@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0xvnq7irsvtd"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_e4xbb"]
+[ext_resource type="Texture2D" uid="uid://cro4x0m8bq5ux" path="res://Assets/Finale_Ressourcen/Visitors/Octopus.png" id="2_e4xbb"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_0uiff"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_e4xbb")
+visitor_type = "Crewmate"
+visitor_default_text = "Helloo!"
+option1_1 = "Someone who’s fun to be around!"
+option2_1 = "Because I’m -uhh- harmless."
+option3_1 = "Well, I -uhh- I’m gonna freeze and die if you don’t!"
+option1_2 = "I’m very playful and I like company."
+option2_2 = "One, uhhhhh two, uhhhhhh I CAN’T I’M DUMB!"
+option3_2 = "I can keep you company. We’re both lonely here."
+decision1 = "Thank you!"
+decision2 = "Awwww, you’re a meanie!"
+decision3 = "What is that?"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_e4xbb")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_0uiff")]
