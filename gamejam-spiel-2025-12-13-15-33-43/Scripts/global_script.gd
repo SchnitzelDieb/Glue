@@ -1,10 +1,20 @@
 extends Node
 
+
 var final_decision: int
-
 var fuel: int
-
 var add_visitor: bool
+var current_day: int = 1
+var visitor_index: int = 0
+var round_tracer: int
+var door_scene: Node2D = null
+
+
+func call_scene_function():
+	print("Aufgerufene global")
+	print(door_scene)
+	if door_scene != null:
+		door_scene.on_room_exit()
 
 
 #Momentan unnötig
@@ -43,6 +53,18 @@ var visitor_list: Dictionary = {
 		"res://Scenes/Visitors/Visitor5.3.tscn"]
 	}
 
+func get_current_visitor_scene() -> PackedScene:
+	var day_list = visitor_list.get(current_day, [])
+	if visitor_index >= day_list.size():
+		return null
+	return load(day_list[visitor_index])
 
-func _ready() -> void:
-	print(visitor_list[1])
+
+func advance_visitor():
+	visitor_index += 1
+	print(visitor_index)
+
+
+func reset_for_next_day():
+	visitor_index = 0
+	current_day += 1
