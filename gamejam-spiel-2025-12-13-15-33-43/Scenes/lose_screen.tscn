@@ -1,11 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpo6b3dhif5b2"]
+[gd_scene load_steps=3 format=3 uid="uid://bpo6b3dhif5b2"]
 
 [ext_resource type="Script" uid="uid://43khhl2uoqme" path="res://Scripts/lose_screen.gd" id="1_s2rrh"]
+[ext_resource type="Texture2D" uid="uid://dkynnm7y7bwb5" path="res://Assets/Finale_Ressourcen/World/Endscreen.png" id="2_488pv"]
 
 [node name="LoseScreen" type="Node2D"]
 script = ExtResource("1_s2rrh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_488pv")
 
 [node name="back_to_main_menu" type="Button" parent="."]
 offset_right = 8.0
