@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cnd4d8f200pah"]
 
 [ext_resource type="Script" uid="uid://c4t7iqv8t22xd" path="res://Scripts/reactor.gd" id="1_u7mhw"]
-[ext_resource type="Texture2D" uid="uid://bcydw5coe1o00" path="res://Assets/PLaceHolder/img_3539.webp" id="2_iav8g"]
+[ext_resource type="Texture2D" uid="uid://dqdd54pic8ugw" path="res://Assets/Finale_Ressourcen/World/reactor_room_bg.png" id="2_amvax"]
 [ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="3_amvax"]
 [ext_resource type="PackedScene" uid="uid://drvfjwhy0ifn6" path="res://Scenes/Ressource.tscn" id="4_amvax"]
 [ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="4_xdul6"]
@@ -16,10 +16,8 @@ grow_vertical = 2
 script = ExtResource("1_u7mhw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(959.87006, 539.5)
-scale = Vector2(1.3335137, 1.0009259)
-texture = ExtResource("2_iav8g")
+position = Vector2(960, 540.5)
+texture = ExtResource("2_amvax")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
