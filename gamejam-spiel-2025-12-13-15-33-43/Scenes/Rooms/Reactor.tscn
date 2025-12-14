@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cnd4d8f200pah"]
 
 [ext_resource type="Script" uid="uid://c4t7iqv8t22xd" path="res://Scripts/reactor.gd" id="1_u7mhw"]
-[ext_resource type="Texture2D" uid="uid://bcydw5coe1o00" path="res://Assets/PLaceHolder/img_3539.webp" id="2_iav8g"]
+[ext_resource type="Texture2D" uid="uid://dqdd54pic8ugw" path="res://Assets/Finale_Ressourcen/World/reactor_room_bg.png" id="2_amvax"]
 [ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="3_amvax"]
 [ext_resource type="PackedScene" uid="uid://drvfjwhy0ifn6" path="res://Scenes/Ressource.tscn" id="4_amvax"]
 
@@ -9,9 +9,8 @@
 script = ExtResource("1_u7mhw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(644, 346.5)
-scale = Vector2(0.90416664, 0.7138889)
-texture = ExtResource("2_iav8g")
+position = Vector2(960, 540.5)
+texture = ExtResource("2_amvax")
 
 [node name="BackButton" type="Button" parent="."]
 offset_left = 32.0
