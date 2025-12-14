@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bud1bta7mglbd"]
+[gd_scene load_steps=4 format=3 uid="uid://bud1bta7mglbd"]
 
 [ext_resource type="Script" uid="uid://byt446w3opt51" path="res://Scripts/main_room.gd" id="1_88gup"]
 [ext_resource type="Texture2D" uid="uid://bly0tqrbsgnyy" path="res://Assets/Finale_Ressourcen/World/BG.webp" id="2_6a818"]
+[ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="3_xbf4f"]
 
 [node name="MainRoom" type="Node2D"]
 script = ExtResource("1_88gup")
@@ -16,6 +17,7 @@ offset_left = 196.0
 offset_top = 272.0
 offset_right = 527.0
 offset_bottom = 766.0
+theme_override_fonts/font = ExtResource("3_xbf4f")
 theme_override_font_sizes/font_size = 24
 text = "Reaktor
 "
@@ -26,6 +28,7 @@ offset_left = 797.0
 offset_top = 279.0
 offset_right = 1125.0
 offset_bottom = 749.0
+theme_override_fonts/font = ExtResource("3_xbf4f")
 theme_override_font_sizes/font_size = 24
 text = "Tür"
 
@@ -35,6 +38,7 @@ offset_left = 1366.0
 offset_top = 275.0
 offset_right = 1695.0
 offset_bottom = 761.0
+theme_override_fonts/font = ExtResource("3_xbf4f")
 theme_override_font_sizes/font_size = 24
 text = "Besucher Raum"
 

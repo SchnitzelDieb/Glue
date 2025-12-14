@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmjwukiha44gi"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_pdqui"]
+[ext_resource type="Texture2D" uid="uid://m6hxpm5mq1wn" path="res://Assets/Finale_Ressourcen/Visitors/Notorious_Big.png" id="2_pdqui"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_js8pd"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_pdqui")
+visitor_type = "Imposter"
+visitor_default_text = "Is someone inside? "
+option1_1 = "Is me."
+option2_1 = "You trust."
+option3_1 = "You good."
+option1_2 = "Is us."
+option2_2 = "Count… five…? "
+option3_2 = "We good."
+decision1 = "We thankful."
+decision2 = "We sad."
+decision3 = "I… free."
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_pdqui")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_js8pd")]

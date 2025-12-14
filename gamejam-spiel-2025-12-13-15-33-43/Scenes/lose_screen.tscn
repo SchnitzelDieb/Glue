@@ -1,18 +1,45 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpo6b3dhif5b2"]
+[gd_scene load_steps=6 format=3 uid="uid://bpo6b3dhif5b2"]
 
 [ext_resource type="Script" uid="uid://43khhl2uoqme" path="res://Scripts/lose_screen.gd" id="1_s2rrh"]
 [ext_resource type="Texture2D" uid="uid://dkynnm7y7bwb5" path="res://Assets/Finale_Ressourcen/World/Endscreen.png" id="2_488pv"]
+[ext_resource type="Theme" uid="uid://c21ir4ifrkw2k" path="res://Assets/Finale_Ressourcen/Themes/Button.tres" id="3_go37l"]
+[ext_resource type="FontFile" uid="uid://cwppbtl6b5nrf" path="res://Assets/Finale_Ressourcen/Typography/BoldPixels.otf" id="4_38ql5"]
+[ext_resource type="Texture2D" uid="uid://cgw2dut26lnwt" path="res://Assets/Finale_Ressourcen/World/Dialogbox.webp" id="5_ak4yb"]
 
 [node name="LoseScreen" type="Node2D"]
 script = ExtResource("1_s2rrh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -2
 position = Vector2(960, 540)
 texture = ExtResource("2_488pv")
 
 [node name="back_to_main_menu" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 1543.0
+offset_top = 106.0
+offset_right = 1866.4
+offset_bottom = 155.0
+theme = ExtResource("3_go37l")
+theme_override_fonts/font = ExtResource("4_38ql5")
+theme_override_font_sizes/font_size = 32
 text = "Back to Main Menu"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 216.0
+offset_top = 880.0
+offset_right = 1697.0
+offset_bottom = 1042.0
+theme_override_fonts/font = ExtResource("4_38ql5")
+theme_override_font_sizes/font_size = 32
+text = "You have died a horrible, long and painful death. No one will ever bury you and no one will ever 
+remember you. 
+If only you had made better choices in life. Perhaps then, things would have gone differently."
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Label"]
+z_index = -1
+position = Vector2(728.50006, 44.999977)
+scale = Vector2(0.54240406, 0.10687021)
+texture = ExtResource("5_ak4yb")
 
 [connection signal="pressed" from="back_to_main_menu" to="." method="_on_back_to_main_menu_pressed"]

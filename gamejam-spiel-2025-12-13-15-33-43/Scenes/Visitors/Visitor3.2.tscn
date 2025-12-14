@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cb3sssijt8xjx"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_k5pej"]
+[ext_resource type="Texture2D" uid="uid://bxm5w6murigag" path="res://Assets/Finale_Ressourcen/Visitors/Torben.png" id="2_k5pej"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_x7fgh"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_k5pej")
+visitor_type = "Imposter"
+visitor_default_text = "Well, high theeeere."
+option1_1 = "Name is Tor…ben."
+option2_1 = "And why not? Be not afraid."
+option3_1 = "Is it not…kind… to off-err…hoss-pea-tell-e-tea."
+option1_2 = "Tor-ben bore-ing."
+option2_2 = "Won, too, free, fore, fave."
+option3_2 = "Tore-bin give warmth… for good night."
+decision1 = "Tank. You. Strain…jar."
+decision2 = "LET! TORE!BEN! IN! NOW!!!"
+decision3 = "YOU SHALL NOT!!!"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_k5pej")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_x7fgh")]

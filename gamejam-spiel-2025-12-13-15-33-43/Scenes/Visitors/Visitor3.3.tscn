@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://brgqu3obmggmj"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_ug0dq"]
+[ext_resource type="Texture2D" uid="uid://b0vy3k7lmvnvn" path="res://Assets/Finale_Ressourcen/Visitors/xXHumanLoverXx.png" id="2_ug0dq"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_m20is"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_ug0dq")
+visitor_type = "Crewmate"
+visitor_default_text = "Excuse me, does someone inhabit this humble abode?"
+option1_1 = "I‘m a lonesome traveler, seeking shelter."
+option2_1 = "Ahh, you have encountered others with that illness I presume. I can assure you, I’m not one of them."
+option3_1 = "Because you are a kind soul."
+option1_2 = "Hmm… I travel, I enjoy exploring and discovering new things, though it has gotten more difficult because of the cold."
+option2_2 = "One, two, three, four, five. What a peculiar way to test for the illness."
+option3_2 = "I don’t know if I can aid you, but I would try my best to lend a hand."
+decision1 = "I am most grateful."
+decision2 = "I suppose I understand your mistrust."
+decision3 = "That’s…"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ug0dq")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_m20is")]

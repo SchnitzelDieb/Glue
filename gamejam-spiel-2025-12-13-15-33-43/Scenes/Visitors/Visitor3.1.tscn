@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbfma3v36ruau"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_64myt"]
+[ext_resource type="Texture2D" uid="uid://bn4nx217qiixy" path="res://Assets/Finale_Ressourcen/Visitors/Squidward_Sprite.png" id="2_64myt"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_pi7hg"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_64myt")
+visitor_type = "Imposter"
+visitor_default_text = "May I come in?"
+option1_1 = "Alien."
+option2_1 = "I’m harmless."
+option3_1 = "I need food."
+option1_2 = "I am hungry."
+option2_2 = "One, two, three,... four-five."
+option3_2 = "I can’t. You must help me."
+decision1 = "Thank you."
+decision2 = "................."
+decision3 = "What are you-"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_64myt")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_pi7hg")]

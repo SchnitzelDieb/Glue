@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://btjmr71u1us77"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_bj8nd"]
+[ext_resource type="Texture2D" uid="uid://cm1n6vf8ya343" path="res://Assets/Finale_Ressourcen/Visitors/Josh_Babinski.png" id="2_bj8nd"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_gcqfu"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_bj8nd")
+visitor_type = "Imposter"
+visitor_default_text = "Hello… friend."
+option1_1 = " I… I… hmm."
+option2_1 = "You… can… trust me."
+option3_1 = "Because… I‘m… cold."
+option1_2 = "We… I… don’t know."
+option2_2 = "One… two… three… four… how far should we count again?"
+option3_2 = "We… are… freedom."
+decision1 = "We… are most… thankful."
+decision2 = "…"
+decision3 = "No…"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_bj8nd")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_gcqfu")]

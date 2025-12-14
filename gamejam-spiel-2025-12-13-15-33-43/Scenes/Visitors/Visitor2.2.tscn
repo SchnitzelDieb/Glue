@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cijcxivfkmm6y"]
+
+[ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_rixj8"]
+[ext_resource type="Texture2D" uid="uid://cparqkbvb7ygb" path="res://Assets/Finale_Ressourcen/Visitors/Mustache_Fish.png" id="2_rixj8"]
+[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_n0jij"]
+
+[node name="Visitor" type="Node2D"]
+script = ExtResource("1_rixj8")
+visitor_type = "Imposter"
+visitor_default_text = "Hii…Let…in."
+option1_1 = "A creature…needs…help."
+option2_1 = "You can trust."
+option3_1 = "Please…You must."
+option1_2 = "Let us in."
+option2_2 = "Five…Five?"
+option3_2 = "I am friend. You are safe."
+decision1 = "Ha, ha, ha…"
+decision2 = "LET US IN!!!"
+decision3 = "HA, HA,HA-"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_rixj8")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_n0jij")]

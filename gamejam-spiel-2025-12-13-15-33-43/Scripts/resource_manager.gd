@@ -20,7 +20,7 @@ func night() -> void:
 	while i > 0:
 		max_fuel -= 10
 		crewmate_count -= 1
-		if crewmate_count <= 0:
+		if crewmate_count < 0:
 			get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn")
 		i = -1
 	if crewmate_killed == true: #Punish for killed crewmate
@@ -28,6 +28,8 @@ func night() -> void:
 	if imposter_killed == true: #Reward for killed imposter
 		fuel += 30
 	can_kill = true
+	crewmate_killed = false
+	imposter_killed = false
 	ship_repair += crewmate_count
 	if ship_repair >= 6:
 		get_tree().change_scene_to_file("res://Scenes/win_screen.tscn")
