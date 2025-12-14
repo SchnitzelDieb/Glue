@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://4xyemkwppem"]
+[gd_scene load_steps=4 format=3 uid="uid://4xyemkwppem"]
 
 [ext_resource type="Script" uid="uid://biec4p83llmdu" path="res://Scripts/visitor.gd" id="1_chtkx"]
 [ext_resource type="Texture2D" uid="uid://bxajxbigascga" path="res://Assets/PLaceHolder/hd-spongebob-cartoon-transparent-png-701751694950081nzrkf14atw.png" id="2_riwc7"]
-[ext_resource type="PackedScene" uid="uid://cdjexweolgbmc" path="res://Scenes/DialogueWindow.tscn" id="3_riwc7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jkgm7"]
 animations = [{
@@ -34,5 +33,3 @@ position = Vector2(548.00006, 582.99994)
 scale = Vector2(0.9368749, 0.94697994)
 sprite_frames = SubResource("SpriteFrames_jkgm7")
 animation = &"idle"
-
-[node name="AnimationPlayer" parent="." instance=ExtResource("3_riwc7")]
